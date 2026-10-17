@@ -14,7 +14,7 @@
       <li>Queue with pause, resume, retry and a manual order you can change by dragging</li>
       <li>Sortable columns: name, size, type, progress, status, speed and time left</li>
       <li>Drag links onto the window to add them</li>
-      <li>Optional Firefox extension that sends browser downloads to Nova DM</li>
+      <li>Optional Firefox extension that sends browser downloads to Nova DM, opening the app if needed</li>
       <li>Interface in 35 languages</li>
     </ul>
     <p>Nova DM never starts a download by itself without you adding it, and it does not collect any data.</p>
@@ -24,11 +24,11 @@
   <url type="bugtracker">https://github.com/NerozLZ/Nova-DM---Download-Manager/issues</url>
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/NerozLZ/Nova-DM---Download-Manager/v1.04/docs/screenshots/downloads-light.png</image>
+      <image>https://raw.githubusercontent.com/NerozLZ/Nova-DM---Download-Manager/v1.05/docs/screenshots/downloads-light.png</image>
       <caption>Download list (sample data)</caption>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/NerozLZ/Nova-DM---Download-Manager/v1.04/docs/screenshots/downloads-dark.png</image>
+      <image>https://raw.githubusercontent.com/NerozLZ/Nova-DM---Download-Manager/v1.05/docs/screenshots/downloads-dark.png</image>
       <caption>Dark theme (sample data)</caption>
     </screenshot>
   </screenshots>
@@ -42,6 +42,7 @@
     <control>keyboard</control>
   </supports>
   <releases>
+    <release version="1.05" date="2026-10-17"/>
     <release version="1.04" date="2026-10-17"/>
   </releases>
 </component>

@@ -1,9 +1,10 @@
 "use strict";
-const DEFAULTS = { enabled: true, port: 17650, token: "", ignoredHosts: "" };
+const DEFAULTS = { enabled: true, port: 17650, token: "", ignoredHosts: "", autoLaunch: true };
 const $ = (id) => document.getElementById(id);
 
 browser.storage.local.get(DEFAULTS).then((s) => {
   $("enabled").checked = s.enabled;
+  $("autolaunch").checked = s.autoLaunch;
   $("port").value = s.port;
   $("token").value = s.token;
   $("ignored").value = s.ignoredHosts;
@@ -12,6 +13,7 @@ browser.storage.local.get(DEFAULTS).then((s) => {
 $("save").addEventListener("click", async () => {
   const s = {
     enabled: $("enabled").checked,
+    autoLaunch: $("autolaunch").checked,
     port: Number($("port").value) || DEFAULTS.port,
     token: $("token").value.trim(),
     ignoredHosts: $("ignored").value,

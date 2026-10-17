@@ -495,6 +495,13 @@ class MainWindow(QMainWindow):
         self._controller.add(links, self._settings.download_dir, filename=extra.get("filename", ""), context=context)
         self.statusBar().showMessage(tr("Download received from the browser."), 4000)
 
+    def bring_to_front(self) -> None:
+        if self.isMinimized():
+            self.showNormal()
+        self.show()
+        self.raise_()
+        self.activateWindow()
+
     def _on_pair_requested(self, _origin: str) -> None:
         """A extensão pede o token: só é entregue se o utilizador confirmar aqui."""
         if self.isMinimized():

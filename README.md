@@ -21,5 +21,7 @@ A extensão está em `browser-extension/firefox/` (Manifest V2). Quando um downl
    (temporária até reiniciar o Firefox; a instalação permanente exige assinatura da Mozilla — pendente).
 3. Opções da extensão: «Ligar ao Nova DM» e confirmar o pedido na janela do Nova DM (o token passa sozinho; só é preciso copiá-lo à mão numa configuração manual). O botão da barra liga/desliga a captura.
 
+Se o Nova DM estiver fechado, a extensão abre-o sozinha (endereço `novadm://`, registado pelo `.desktop`; o Firefox pede confirmação na primeira vez) e só depois lhe entrega o download. Isto pode ser desligado nas opções da extensão. O Nova DM passou a ter uma única instância: abrir de novo só traz a janela existente para a frente.
+
 Os cookies só existem em memória: se fechar o Nova DM a meio, ao retomar essa transferência pode ser preciso
 voltar a iniciá-la no browser. **Não testado num Firefox real** (só o recetor e o motor têm testes automáticos).
