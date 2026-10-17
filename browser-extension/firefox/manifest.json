@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Nova DM Integration",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Sends downloads started in Firefox to Nova DM running on this computer.",
   "browser_specific_settings": {
     "gecko": {
