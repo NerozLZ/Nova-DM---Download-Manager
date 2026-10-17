@@ -15,6 +15,6 @@ else
 fi
 
 "${BUILDER[@]}" --user --install --force-clean --install-deps-from=flathub \
-  --state-dir=../.flatpak-builder ../build-dir app.novadm.NovaDM.yaml
+  --state-dir=../.flatpak-builder ../build-dir io.github.NerozLZ.NovaDM.yaml
 
-echo "Pronto. Executar com: flatpak run app.novadm.NovaDM"
+echo "Pronto. Executar com: flatpak run io.github.NerozLZ.NovaDM"

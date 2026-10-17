@@ -8,4 +8,4 @@
 ## Flatpak (Bazzite)
 Ver `FLATPAK.md`. O manifesto ainda não foi construído nem testado.
 
-Dados: `~/.local/share/nova-dm` (base de dados), `~/.config/nova-dm` e `~/.local/state/nova-dm` (logs), seguindo o XDG (dentro do Flatpak, em `~/.var/app/app.novadm.NovaDM`).
+Dados: `~/.local/share/nova-dm` (base de dados), `~/.config/nova-dm` e `~/.local/state/nova-dm` (logs), seguindo o XDG (dentro do Flatpak, em `~/.var/app/io.github.NerozLZ.NovaDM`).

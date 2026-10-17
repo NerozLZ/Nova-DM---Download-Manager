@@ -1,6 +1,6 @@
 # Flatpak
 
-`flatpak/app.novadm.NovaDM.yaml` compila o aria2 1.37.0 (sha256 verificado a partir do tarball oficial) e instala o Nova DM.
+`flatpak/io.github.NerozLZ.NovaDM.yaml` compila o aria2 1.37.0 (sha256 verificado a partir do tarball oficial) e instala o Nova DM.
 
 **Não foi construído nem testado**: o `flatpak-builder` não existia no ambiente de desenvolvimento. Antes de usar, confirmar:
 - (runtime KDE 6.11 e PySide BaseApp 6.11 já confirmados no Flathub; se saírem versões novas, atualizar os dois campos);
@@ -12,4 +12,4 @@ Licença: o aria2 é GPL-2.0-or-later; ao distribuir o Flatpak é preciso dispon
 BitTorrent/Metalink estão desativados na compilação para reduzir dependências.
 
 ## Construir
-`./flatpak/build.sh` (instala runtimes, flatpak-builder e a app para o utilizador). Executar: `flatpak run app.novadm.NovaDM`.
+`./flatpak/build.sh` (instala runtimes, flatpak-builder e a app para o utilizador). Executar: `flatpak run io.github.NerozLZ.NovaDM`.

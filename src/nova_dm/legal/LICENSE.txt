@@ -32,6 +32,10 @@ PORTUGUÊS
    conteúdos que descarrega e deve respeitar os direitos de autor, os termos
    dos servidores e a legislação aplicável.
 
+7. Redistribuição. É permitido redistribuir cópias não modificadas do Nova DM,
+   gratuitamente, incluindo através de lojas e repositórios de aplicações
+   (por exemplo o Flathub), desde que esta licença acompanhe o software.
+
 ENGLISH
 
 1. Grant. Permission is granted to anyone to install and use Nova DM free of
@@ -55,6 +59,10 @@ ENGLISH
 
 6. User responsibility. You are solely responsible for the content you
    download and must respect copyright, server terms and applicable law.
+
+7. Redistribution. You may redistribute unmodified copies of Nova DM free of
+   charge, including through app stores and repositories (for example
+   Flathub), provided this license accompanies the software.
 
 NOTA / NOTE: este texto é um modelo inicial e não foi revisto por um
 advogado. This text is an initial template and has not been reviewed by a lawyer.

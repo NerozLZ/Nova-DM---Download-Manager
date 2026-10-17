@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.NerozLZ.NovaDM</id>
+  <name>Nova DM</name>
+  <summary>Download manager for Linux</summary>
+  <developer id="io.github.nerozlz">
+    <name>NerozLZ</name>
+  </developer>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>LicenseRef-proprietary=https://github.com/NerozLZ/Nova-DM---Download-Manager/blob/main/LICENSE</project_license>
+  <description>
+    <p>Nova DM is a download manager for Linux with a clean interface. It uses aria2 for fast, resumable downloads split into several connections.</p>
+    <ul>
+      <li>Queue with pause, resume, retry and a manual order you can change by dragging</li>
+      <li>Sortable columns: name, size, type, progress, status, speed and time left</li>
+      <li>Drag links onto the window to add them</li>
+      <li>Optional Firefox extension that sends browser downloads to Nova DM</li>
+      <li>Interface in 35 languages</li>
+    </ul>
+    <p>Nova DM never starts a download by itself without you adding it, and it does not collect any data.</p>
+  </description>
+  <launchable type="desktop-id">io.github.NerozLZ.NovaDM.desktop</launchable>
+  <url type="homepage">https://github.com/NerozLZ/Nova-DM---Download-Manager</url>
+  <url type="bugtracker">https://github.com/NerozLZ/Nova-DM---Download-Manager/issues</url>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://raw.githubusercontent.com/NerozLZ/Nova-DM---Download-Manager/v1.04/docs/screenshots/downloads-light.png</image>
+      <caption>Download list (sample data)</caption>
+    </screenshot>
+    <screenshot>
+      <image>https://raw.githubusercontent.com/NerozLZ/Nova-DM---Download-Manager/v1.04/docs/screenshots/downloads-dark.png</image>
+      <caption>Dark theme (sample data)</caption>
+    </screenshot>
+  </screenshots>
+  <content_rating type="oars-1.1"/>
+  <categories>
+    <category>Network</category>
+    <category>FileTransfer</category>
+  </categories>
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+  </supports>
+  <releases>
+    <release version="1.04" date="2026-10-17"/>
+  </releases>
+</component>
