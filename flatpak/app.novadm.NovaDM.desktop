@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Nova DM
+GenericName=Download Manager
+Comment=Download Manager
+Exec=nova-dm
+Icon=app.novadm.NovaDM
+Terminal=false
+Categories=Network;FileTransfer;
+Keywords=download;aria2;

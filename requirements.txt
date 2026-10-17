@@ -1,0 +1,6 @@
+# Dependências de execução (ver docs/DEPENDENCIES.md para a justificação)
+PySide6>=6.7
+
+# Dependências de desenvolvimento
+pytest>=8
+pytest-qt>=4.4

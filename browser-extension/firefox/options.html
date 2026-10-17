@@ -1,0 +1,17 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Nova DM</title>
+<style>body{font:14px sans-serif;max-width:34rem;margin:2rem auto;padding:0 1rem}label{display:block;margin:.8rem 0 .2rem}input[type=text],input[type=number],textarea{width:100%;box-sizing:border-box}#status{margin-top:1rem;min-height:1.2rem}</style></head>
+<body>
+<h1>Nova DM</h1>
+<label><input type="checkbox" id="enabled"> Send downloads to Nova DM</label>
+<label for="port">Port (same as in Nova DM → Settings → Browser integration)</label>
+<input type="number" id="port" min="1024" max="65535">
+<p><button id="connect">Connect to Nova DM</button></p>
+<label for="token">Access token (filled in automatically; manual entry only if needed)</label>
+<input type="text" id="token" autocomplete="off" spellcheck="false">
+<label for="ignored">Sites that stay in Firefox (one per line)</label>
+<textarea id="ignored" rows="4"></textarea>
+<p><button id="save">Save and test</button></p>
+<div id="status" role="status"></div>
+<script src="options.js"></script>
+</body></html>

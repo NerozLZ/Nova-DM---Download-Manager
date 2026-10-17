@@ -1,0 +1,60 @@
+Nova Download Manager (Nova DM) - Licença Freeware / Freeware License
+Versão 1.0
+
+Copyright (c) 2026 Nova DM. Todos os direitos reservados.
+
+PORTUGUÊS
+
+1. Concessão. É concedida a qualquer pessoa uma licença gratuita, mundial,
+   não exclusiva e revogável para instalar e utilizar o Nova DM, para fins
+   pessoais ou comerciais, sem qualquer pagamento.
+
+2. Restrições. Sem autorização escrita do autor, não é permitido:
+   a) vender, alugar ou sublicenciar o Nova DM;
+   b) cobrar pela sua distribuição ou incluí-lo em produtos pagos;
+   c) remover ou alterar os avisos de direitos de autor e esta licença;
+   d) apresentar o Nova DM, ou versões modificadas, como obra própria.
+
+3. Componentes de terceiros. O Nova DM utiliza componentes de terceiros, em
+   particular o aria2 (GPL-2.0-or-later) e o Qt for Python / PySide6
+   (LGPL-3.0). Esses componentes mantêm as suas próprias licenças, que
+   prevalecem sobre esta licença no que lhes diz respeito. Ver THIRD_PARTY.md.
+
+4. Sem garantia. O Nova DM é fornecido "tal como está", sem garantia de
+   qualquer tipo, expressa ou implícita, incluindo, sem limitação, garantias de
+   comercialização, adequação a um fim específico e não violação de direitos.
+
+5. Limitação de responsabilidade. Em nenhuma circunstância o autor será
+   responsável por danos, perdas de dados ou outras responsabilidades
+   resultantes da utilização ou da impossibilidade de utilização do software.
+
+6. Responsabilidade do utilizador. O utilizador é o único responsável pelos
+   conteúdos que descarrega e deve respeitar os direitos de autor, os termos
+   dos servidores e a legislação aplicável.
+
+ENGLISH
+
+1. Grant. Permission is granted to anyone to install and use Nova DM free of
+   charge, for personal or commercial purposes.
+
+2. Restrictions. Without written permission from the author you may not sell,
+   rent or sublicense Nova DM; charge for its distribution or bundle it in
+   paid products; remove or alter copyright notices or this license; or
+   present Nova DM or modified versions as your own work.
+
+3. Third-party components. Nova DM uses third-party components, notably aria2
+   (GPL-2.0-or-later) and Qt for Python / PySide6 (LGPL-3.0). They remain under
+   their own licenses, which take precedence for those components. See
+   THIRD_PARTY.md.
+
+4. No warranty. Nova DM is provided "as is", without warranty of any kind.
+
+5. Limitation of liability. In no event shall the author be liable for any
+   damages, data loss or other liability arising from the use of, or inability
+   to use, the software.
+
+6. User responsibility. You are solely responsible for the content you
+   download and must respect copyright, server terms and applicable law.
+
+NOTA / NOTE: este texto é um modelo inicial e não foi revisto por um
+advogado. This text is an initial template and has not been reviewed by a lawyer.
