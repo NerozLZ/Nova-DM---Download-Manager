@@ -21,6 +21,6 @@ Ficheiros preparados: `flatpak/io.github.NerozLZ.NovaDM.metainfo.xml`, `flatpak/
 `flathub/io.github.NerozLZ.NovaDM.yaml` (fonte git na tag `v1.05`). Licença declarada: `LicenseRef-proprietary` (freeware, redistribuição permitida).
 
 Passos que faltam (não foram feitos nem testados):
-1. Criar a tag/release `v1.04` no GitHub, apontando ao commit `6621060`.
+1. Criar a tag/release `v1.05` no GitHub, apontando ao commit `bea14c3`.
 2. Compilar e testar com `flatpak/build.sh`; validar com `flatpak run --command=flatpak-builder-lint org.flatpak.Builder manifest flathub/io.github.NerozLZ.NovaDM.yaml` e `... appstream flatpak/io.github.NerozLZ.NovaDM.metainfo.xml`.
 3. Fazer fork de `flathub/flathub`, ramo `new-pr` a partir de `new-pr`, adicionar o manifesto e abrir o pull request (https://docs.flathub.org/docs/for-app-authors/submission).
