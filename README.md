@@ -25,3 +25,25 @@ Se o Nova DM estiver fechado, a extensão abre-o sozinha (endereço `novadm://`,
 
 Os cookies só existem em memória: se fechar o Nova DM a meio, ao retomar essa transferência pode ser preciso
 voltar a iniciá-la no browser. **Não testado num Firefox real** (só o recetor e o motor têm testes automáticos).
+
+
+# Nova DM — Nova Download Manager
+
+Download manager for Linux (Python 3.12+, PySide6, aria2 via JSON-RPC, SQLite). License: freeware (see LICENSE).
+
+Status (Phase 1)
+
+Implemented and tested: add downloads (multiple links, name and folder, links per download; links also by drag and drop), pause/resume/cancel/repeat, queue with limit of simultaneous downloads and chosen order (drag, menu, Alt+↑/↓), sorting by column (click on the title: ascending, descending, manual order), multiple selection with boxes and "select all", remove only from the list or with the files, automatic categories, history in SQLite, resumes on startup, global speed limit, dark/light theme, 35 languages, open file/folder (with warning for executables — you never run anything automatically).
+Firefox Integration
+
+The extension is located in browser-extension/firefox/ (Manifest V2). When a download starts in Firefox, it sends the link (with referrer, user-agent, and cookies, for logged-in sites) to Nova DM and cancels the Firefox download only after Nova DM accepts it; if Nova DM is closed, Firefox downloads normally.
+
+Nova DM › Settings › Browser Integration: connect, copy token, save.
+
+Firefox: about:debugging#/runtime/this-firefox › «Load temporary extension…» › choose manifest.json (temporary until Firefox restarts; permanent installation requires Mozilla subscription — pending).
+
+Extension options: «Connect to Nova DM» and confirm the request in the Nova DM window (the token passes automatically; you only need to copy it manually in a manual setup). The button on the toolbar turns capture on/off.
+
+If Nova DM is closed, the extension opens it automatically (address novadm://, registered by .desktop; Firefox asks for confirmation the first time) and only then delivers the download to you. This can be disabled in the extension options. Nova DM now has a single instance: reopening it only brings the existing window to the forefront.
+
+Cookies only exist in memory: if you close Nova DM mid-process, resuming the download may require restarting it in the browser. Not tested on a real Firefox (only the receiver and the mechanism have automatic tests).
