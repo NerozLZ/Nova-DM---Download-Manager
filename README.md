@@ -9,20 +9,6 @@ fila com limite de downloads simultâneos e ordem escolhida (arrastar, menu, Alt
 velocidade, tema escuro/claro, 35 idiomas, abrir ficheiro/pasta (com aviso para executáveis — nunca se executa nada
 automaticamente).
 
-**Pendente (Fase 2/3, não implementado):** agendamento, categorias configuráveis,
-bandeja do sistema/comportamento ao fechar,
-limite de velocidade por download, BitTorrent/Metalink (desativados no Flatpak).
-
-## Executar
-
-```bash
-python -m venv .venv && . .venv/bin/activate
-pip install -e ".[dev]"
-nova-dm            # requer o aria2c instalado (ou configurado nas Definições)
-pytest             # QT_QPA_PLATFORM=offscreen em sistemas sem ecrã
-```
-
-Mais em `docs/`: `INSTALL.md`, `ARCHITECTURE.md`, `DEPENDENCIES.md`, `FLATPAK.md`, `TRANSLATIONS.md`.
 
 ## Integração com o Firefox
 
