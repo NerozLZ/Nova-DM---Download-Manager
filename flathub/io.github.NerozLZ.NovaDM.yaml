@@ -1,0 +1,57 @@
+# Manifesto para submeter ao Flathub (copiar para o repositório da submissão como io.github.NerozLZ.NovaDM.yaml).
+# Difere de flatpak/io.github.NerozLZ.NovaDM.yaml só na fonte do nova-dm: git (tag + commit) em vez da pasta local.
+# NÃO FOI CONSTRUÍDO nem validado com o linter do Flathub.
+app-id: io.github.NerozLZ.NovaDM
+runtime: org.kde.Platform         # o PySide BaseApp é construído sobre o runtime KDE
+runtime-version: '6.11'
+sdk: org.kde.Sdk
+base: io.qt.PySide.BaseApp
+base-version: '6.11'
+command: nova-dm
+
+finish-args:
+  - --share=network               # descarregar ficheiros
+  - --share=ipc
+  - --socket=fallback-x11
+  - --socket=wayland
+  - --device=dri
+  - --filesystem=xdg-download     # pasta de downloads predefinida
+  # Sem --filesystem=host: outras pastas escolhem-se pelo portal de ficheiros (diálogo nativo).
+
+modules:
+  - name: aria2
+    buildsystem: autotools
+    no-parallel-make: true  # evita o código 137 (falta de memória) ao compilar o aria2
+    config-opts:
+      - --without-libxml2
+      - --without-libgcrypt
+      - --with-openssl
+      - --without-sqlite3
+      - --disable-bittorrent
+      - --disable-metalink
+    sources:
+      - type: archive
+        url: https://github.com/aria2/aria2/releases/download/release-1.37.0/aria2-1.37.0.tar.xz
+        sha256: 60a420ad7085eb616cb6e2bdf0a7206d68ff3d37fb5a956dc44242eb2f79b66b
+
+  - name: python3-setuptools      # o pip corre sem rede e sem isolamento: precisa do setuptools instalado
+    buildsystem: simple
+    build-commands:
+      - pip3 install --verbose --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST} --no-build-isolation setuptools
+    sources:
+      - type: file
+        url: https://files.pythonhosted.org/packages/95/9c/c510029fc6ef33a6275cd2c5d3cecd6613dfd6aa401d57c54f1c18852ccf/setuptools-84.0.0-py3-none-any.whl
+        sha256: 51a52592b3b99e102b609654876bd65f19f999935166d1352678931132b0c670
+
+  - name: nova-dm
+    buildsystem: simple
+    build-commands:
+      - pip3 install --verbose --no-index --no-deps --no-build-isolation --prefix=${FLATPAK_DEST} .
+      - install -Dm644 flatpak/io.github.NerozLZ.NovaDM.metainfo.xml ${FLATPAK_DEST}/share/metainfo/io.github.NerozLZ.NovaDM.metainfo.xml
+      - install -Dm644 flatpak/io.github.NerozLZ.NovaDM.desktop ${FLATPAK_DEST}/share/applications/io.github.NerozLZ.NovaDM.desktop
+      - install -Dm644 src/nova_dm/assets/logo.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/io.github.NerozLZ.NovaDM.svg
+    sources:
+      - type: git
+        url: https://github.com/NerozLZ/Nova-DM---Download-Manager.git
+        tag: v1.04
+        commit: 66210605bfb5385be14d16a5032785fb4e3dc63b

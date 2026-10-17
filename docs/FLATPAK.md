@@ -13,3 +13,14 @@ BitTorrent/Metalink estão desativados na compilação para reduzir dependência
 
 ## Construir
 `./flatpak/build.sh` (instala runtimes, flatpak-builder e a app para o utilizador). Executar: `flatpak run io.github.NerozLZ.NovaDM`.
+
+## Submissão ao Flathub
+
+ID da app: `io.github.NerozLZ.NovaDM` (ligado à conta GitHub; não exige domínio próprio).
+Ficheiros preparados: `flatpak/io.github.NerozLZ.NovaDM.metainfo.xml`, `flatpak/io.github.NerozLZ.NovaDM.desktop` e o manifesto
+`flathub/io.github.NerozLZ.NovaDM.yaml` (fonte git na tag `v1.04`). Licença declarada: `LicenseRef-proprietary` (freeware, redistribuição permitida).
+
+Passos que faltam (não foram feitos nem testados):
+1. Criar a tag/release `v1.04` no GitHub, apontando ao commit `6621060`.
+2. Compilar e testar com `flatpak/build.sh`; validar com `flatpak run --command=flatpak-builder-lint org.flatpak.Builder manifest flathub/io.github.NerozLZ.NovaDM.yaml` e `... appstream flatpak/io.github.NerozLZ.NovaDM.metainfo.xml`.
+3. Fazer fork de `flathub/flathub`, ramo `new-pr` a partir de `new-pr`, adicionar o manifesto e abrir o pull request (https://docs.flathub.org/docs/for-app-authors/submission).
