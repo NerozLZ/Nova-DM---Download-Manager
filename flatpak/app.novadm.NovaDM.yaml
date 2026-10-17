@@ -22,6 +22,7 @@ finish-args:
 modules:
   - name: aria2
     buildsystem: autotools
+    no-parallel-make: true  # evita o código 137 (falta de memória) ao compilar o aria2
     config-opts:
       - --without-libxml2
       - --without-libgcrypt
