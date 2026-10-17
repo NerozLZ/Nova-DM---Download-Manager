@@ -53,5 +53,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/NerozLZ/Nova-DM---Download-Manager.git
-        tag: v1.04
-        commit: 66210605bfb5385be14d16a5032785fb4e3dc63b
+        tag: v1.05
+        commit: bea14c3b1617a6bc437bf480be0cfe4038b007f8

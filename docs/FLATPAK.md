@@ -18,7 +18,7 @@ BitTorrent/Metalink estão desativados na compilação para reduzir dependência
 
 ID da app: `io.github.NerozLZ.NovaDM` (ligado à conta GitHub; não exige domínio próprio).
 Ficheiros preparados: `flatpak/io.github.NerozLZ.NovaDM.metainfo.xml`, `flatpak/io.github.NerozLZ.NovaDM.desktop` e o manifesto
-`flathub/io.github.NerozLZ.NovaDM.yaml` (fonte git na tag `v1.04`). Licença declarada: `LicenseRef-proprietary` (freeware, redistribuição permitida).
+`flathub/io.github.NerozLZ.NovaDM.yaml` (fonte git na tag `v1.05`). Licença declarada: `LicenseRef-proprietary` (freeware, redistribuição permitida).
 
 Passos que faltam (não foram feitos nem testados):
 1. Criar a tag/release `v1.04` no GitHub, apontando ao commit `6621060`.
